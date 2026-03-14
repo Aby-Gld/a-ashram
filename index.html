@@ -9,20 +9,12 @@ body{
 font-family: Arial, sans-serif;
 margin:0;
 background:#FAF9F6;
-color:#333333;
-line-height:1.6;
-}
-
-header{
-background:#2B4C7E;
-color:white;
-padding:70px 20px;
-text-align:center;
+color:#333;
 }
 
 nav{
 background:#1f2937;
-padding:12px;
+padding:14px;
 text-align:center;
 }
 
@@ -33,24 +25,27 @@ text-decoration:none;
 font-weight:bold;
 }
 
-.container{
-max-width:900px;
-margin:auto;
-background:white;
-padding:40px;
-margin-top:20px;
-border-radius:6px;
-}
-
-.highlight{
-background:#eef3fb;
-padding:20px;
-border-left:5px solid #2B4C7E;
-}
-
-.cta{
+.hero{
+background-image:url('images/classroom.jpg');
+background-size:cover;
+background-position:center;
+height:500px;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
-margin-top:30px;
+color:white;
+}
+
+.hero-text{
+background:rgba(0,0,0,0.5);
+padding:40px;
+border-radius:8px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
 }
 
 .button{
@@ -58,20 +53,32 @@ background:#F59E42;
 color:white;
 padding:14px 30px;
 text-decoration:none;
-font-size:18px;
+font-size:20px;
 border-radius:6px;
-font-weight:bold;
+display:inline-block;
+margin-top:20px;
 }
 
-.button:hover{
-background:#e48b2a;
+.container{
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+}
+
+.section{
+margin-bottom:50px;
+}
+
+.image{
+width:100%;
+border-radius:8px;
+margin-top:20px;
 }
 
 footer{
 text-align:center;
 padding:30px;
 background:#e5e7eb;
-margin-top:30px;
 }
 
 </style>
@@ -80,55 +87,95 @@ margin-top:30px;
 
 <body>
 
-<header>
-<h1>Antarbharti Ashram</h1>
-<p>Helping Children in Nagpur Build a Brighter Future</p>
-</header>
-
 <nav>
 <a href="index.html">Home</a>
 <a href="about.html">About Us</a>
 <a href="donate.html">Donate</a>
 </nav>
 
+<div class="hero">
+
+<div class="hero-text">
+
+<h1>Give Every Child the Chance to Learn</h1>
+
+<p>
+Supporting children in Nagpur through education, care, and opportunity.
+</p>
+
+<a class="button" href="donate.html">
+Support a Child Today
+</a>
+
+</div>
+
+</div>
+
 <div class="container">
 
 <div class="section">
-<h2>Every Child Deserves a Chance</h2>
+
+<h2>A School Built on Care</h2>
 
 <p>
-In many low-income communities in Nagpur, children grow up without access to stable education,
-safe childcare, or the opportunity to realize their full potential.
+Antarbharti Ashram is a family-run school in Nagpur dedicated to supporting
+children from low-income families.
 </p>
 
 <p>
-Without support, these children often fall behind before their lives even begin.
-</p>
-</div>
-
-<div class="section highlight">
-
-<h2>A Place Where Children Can Grow</h2>
-
-<p>
-Antarbharti Ashram is a family-run school and childcare center dedicated to helping children
-from underprivileged families.
+Here, children find not only education but also a safe place to grow,
+learn, and discover their potential.
 </p>
 
-<p>
-We provide education, care, guidance, and a safe environment where children can learn,
-dream, and build a better future.
-</p>
+<img class="image" src="images/team.jpg">
 
 </div>
 
 <div class="section">
 
-<h2>Your Support Creates Real Change</h2>
+<h2>Learning With Joy</h2>
 
 <p>
-When you support Antarbharti Ashram, you are helping provide:
+Our teachers work with love and dedication to help every child feel confident,
+curious, and excited about learning.
 </p>
 
-<ul>
-<li>Education for children who other
+<p>
+Your support allows us to continue creating an environment where
+children can dream about a brighter future.
+</p>
+
+<img class="image" src="images/teacher.jpg">
+
+</div>
+
+<div class="section">
+
+<h2>You Can Change a Child's Future</h2>
+
+<p>
+Education changes lives.
+</p>
+
+<p>
+By supporting Antarbharti Ashram, you become part of a movement
+that believes every child deserves opportunity, dignity, and hope.
+</p>
+
+<a class="button" href="donate.html">
+Donate Today
+</a>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>Antarbharti Ashram • Nagpur, India</p>
+<p>Empowering children through education</p>
+
+</footer>
+
+</body>
+</html>
